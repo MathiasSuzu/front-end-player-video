@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'coe';
+    src: url("fonts/corbel.otf") format("opentype");
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #262626;
+}
+
+div {
+    margin: 0;
+    border: 0;
+}
+
+.header{
+    display: flex;
+    width: 100vw;
+}
+.header form{	
+        width: 50vw;
+        display: flex;
+        margin: 0;
+        background-color: #161616;
+    
+}
+.header div{
+    display: flex;
+        width: 6vw;
+        height: 7vh;
+        align-items: center;
+        background-color: #161616;
+}
+.header .inhead{
+    width: 50vw;
+    height: 7vh;
+    background-color: #262626;
+}
+
+.open {
+    color: #FF8F45;
+    margin: 0 auto 0 0;
+    padding-left: 1vw;
+    cursor: pointer;
+    user-select: none;
+    width: 1.5vw;
+    font-size: 2.5vw;
+}
+
+.input {
+    border: none;
+    background-color: #161616;
+    outline: none;
+    font-size: 1.3vw;
+    transition: 0.4s;
+    width: 100%;
+    height: 7.5vh;
+    color: white;
+    padding-left: 1vw;
+}
+.boutton {
+    outline:1px;
+    width: 2vw;
+    height:2vw;
+    background: rgb(22, 22, 22);
+    transition: 0.4s;
+    cursor: pointer;
+    background-image:url('img/loupe.png');
+    background-size:95%;
+           border:none;
+           margin:auto;
+}
+
+.TitleGrid {
+    position: flex;
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    height: 10vh;
+
+}
+
+.ep {
+    grid-column: 2;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 2.5vw;
+
+}
+
+.buttonTop {
+    margin: auto;
+    position: flex;
+}
+
+.accueil {
+    padding: 0.4vw 3vw;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FF8F45;
+    font-family: coe;
+}
+.corps {
+    position: flex;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr;
+
+}
+
+.slider {
+    grid-column: 2;
+
+}
+
+.above {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    justify-content: space-between;
+}
+
+
+select#episode, select#saison {
+    padding: 0vw 2vw;
+    padding-top: 0.15vw;
+    padding-bottom: 0.15vw;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FF8F45;
+    font-family: coe;
+    cursor: pointer;
+    margin-right: 1vw;
+    border: 0px solid black;
+    
+}
+
+select#episode:focus, select#saison:focus {
+    background-color: #161616;
+    color: white;
+  }
+
+#rate {
+    display: flex;
+    
+}
+
+.etoile{
+	width:2vw;
+	height:2vw;
+    margin-left: 0.25vw;
+    background-size: cover;
+	cursor:pointer;
+
+}
+
+.eval {
+    margin-left: 1vw;
+    padding: 0vw 0.5vw;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FF8F45;
+    font-family: coe;
+    border: 0px solid black;
+    
+}
+
+video, iframe {
+    display: flex;
+    margin: auto;
+    margin-top: 1vw;
+    background-color: rgb(0, 0, 0);
+    width: 65vw;
+    height: 60vh;
+}
+
+
+
+.addanime {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'coe';
+    margin-top: 3.4vw;
+    font-size: 1.3vw;
+    border: 0 solid black;
+    grid-row-gap: 0.3vw;
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+
+}
+
+input.INPUTadmin {
+    border-radius:0.7vw;
+	border:  0 solid black;
+	padding: 0.7vw;
+    box-sizing: border-box;
+    
+}
+
+button.add {
+    color: white;
+    border: 0px solid black;
+    border-radius: 0.7vw;
+    padding: 0.5vw;
+    background-color: #FF8F45;
+    margin-top: 0.7vw;
+    font-size: 1.3vw;
+
+}
+
+.del {
+    margin: auto;
+    margin-top: 4.2vw;
+}
+
+select#all {
+    color: white;
+    width: 15vw;
+    border-radius: 0.7vw;
+    padding-top: 0.4vw;
+    padding-bottom: 0.4vw;
+    background-color: #FF8F45;
+    border: 0px solid black;
+    font-size: 1vw;
+   
+}
+
+select#all:focus {
+    background-color: #161616;
+    color: white;
+}
+
+a.linke {
+    color: white;
+    font-family: coe;
+    font-size: 1.1vw;
+}
+
+
+
+.prev, .next {
+    text-decoration: none;
+    color: white;
+    border-radius: 0.7vw;
+    text-align: center;
+    font-size: 1.3vw;
+    background-color: #FF8F45;
+    font-family: coe;
+    text-align: center;
+
+}
+
+.prev {
+    padding: 0.4vw 1.8vw;
+    margin-right: 0.75vw;
+}
+
+.next {
+    padding: 0.4vw 2.722vw;
+    margin-left: 0.75vw;
+}
+
+.buttonBot {
+    grid-column: 2;
+    margin: auto;
+    margin-top: 2vw;
+}
+
+.del , .addanime {
+    display: none;
+}
+
+a:hover, button:hover, select:hover {
+    background-color:#e5803d;
+}
+
+
+@media (pointer:coarse){
+
+@media screen and (orientation:portrait) {
+
+    .header{
+        display: flex;
+        width: 100vw;
+        height: 5vh;
+    }
+    .header form{
+        height: 5vh;
+        width: 50vw;
+        display: flex;
+        margin: 0;
+        background-color: #161616;
+        
+    }
+    .header div{
+        display: flex;
+        width: 6vw;
+        height: 5vh;
+        align-items: center;
+        background-color: #161616;
+    }
+    .header .inhead{
+        width: 50vw;
+        height: 5vh;
+        background-color: #262626;
+    }
+
+    .open {
+
+        padding-left: 1vh;
+        width: 1.5vh;
+        font-size: 2.5vh;
+    }
+
+
+    .del, .addanime {
+        display: none;
+    }
+
+    .TitleGrid {
+        height: 10vw;
+
+    }
+
+    .ep {
+        font-size: 3vw;
+    }
+
+    .acceuil {
+        margin-top: 1.5vh;
+        padding: 0.3vh 1vh;
+        margin-right: 1vh;
+        text-align: center;
+        border-radius: 0.7vh;
+        font-size: 1.3vh;
+    }
+
+    select#episode, select#saison {
+        margin-top: 1.5vh;
+        padding: 0vh 1vh;
+        padding-top: 0.15vh;
+        padding-bottom: 0.15vh;
+        margin-right: 1vh;
+        text-align: center;
+        border-radius: 0.7vh;
+        font-size: 1.3vh;
+    }
+    .etoile{
+
+        margin-top: 1.5vh;
+        width:2vh;
+	    height:2vh;
+        margin-left: 0.3vw;
+        
+    }
+
+    .eval {
+        margin-top: 1.5vh;
+        padding: 0.3vh 1vh;
+        margin-right: 1vh;
+        text-align: center;
+        border-radius: 0.7vh;
+        font-size: 1.3vh;
+        
+    }
+
+    video, iframe {
+        margin-top: 1.5vh;
+        width: 90vw;
+        height: 50vw;
+        margin-bottom: 1.5vh;
+    }
+
+    .prev, .next {
+        
+        font-size: 1.3vh;
+        border-radius: 0.7vh;
+    }
+
+    .prev {
+        padding: 0.4vh 1.8vh;
+        margin-right: 0.75vw;
+    }
+    
+    .next {
+        padding: 0.4vh 2.722vh;
+        margin-left: 0.75vw;
+    }
+
+    .input {
+        font-size: 1.3vh;
+        height: 5vh;
+       }
+    
+    .boutton {
+
+        width: 2vh;
+        height: 2vh;
+        cursor: pointer;
+        background-image: url('img/loupe.png');
+    }
+
+    }
+}
+

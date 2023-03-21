@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>titre</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="inhead">
+      <h1 class="open">☰</h1>
+        </div>
+      <form action="#" method="post">
+            <input type="text" name="search" class="input" autocomplete="off" placeholder="  Recherche">
+            <div><input type="submit" class="boutton" value=""></div>
+        </form>
+    </div>
+
+      <div class="TitleGrid">
+          <h1 class="ep"><span>épisode : 1, nom de l'épisode tres tres tres long</span></h1>
+
+        <div class="buttonTop">
+          <a class="accueil" href="#">ACCUEIL</a>
+        </div>
+      </div>
+      
+  <div class="corps">
+   <div class="del"> 
+    <select id="all" onchange="go();">
+      <option value="ep:2,sa:1,na:Black Clover">Saison: 10, épisode: 10, nom de l'épisode tres tres tres long</option>
+      <option value="a">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+      <option value="a">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+      <option value="a">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+      <option value="a">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</option>
+
+    </select>
+  </br>
+      <a class="linke" href="#">supprimer cet épisode</a>
+    </div>
+    <section class="slider">
+    <div class="above">
+    
+    <section>  
+    <select id="saison">
+        <option disabled selected hidden>SAISON</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+    </select>
+
+    <select id="episode" >
+      <option disabled selected hidden>ÉPISODE</option>
+      <option value="01">01</option>
+      <option value="02">02</option>
+      <option value="03">03</option>
+      <option value="04">04</option>
+      <option value="05">05</option>
+      <option value="06">06</option>
+      <option value="07">07</option>
+      <option value="08">08</option>
+      <option value="09">09</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </section>
+
+    <section id="rate">
+      <div class="etoile" onclick="val(1);" style="background-image:url('./img/etoile.off.png')"></div>
+      <div class="etoile" onclick="val(2);" style="background-image:url('./img/etoile.off.png')"></div>
+      <div class="etoile" onclick="val(3);" style="background-image:url('./img/etoile.off.png')"></div>
+      <div class="etoile" onclick="val(4);" style="background-image:url('./img/etoile.off.png')"></div>
+      <div class="etoile" onclick="val(5);" style="background-image:url('./img/etoile.off.png')"></div>
+      <button type="submit" name="eval" class="eval">Évaluer</button>
+    </section>
+
+    </div>
+    
+      <div>
+        <video src="https://exemple.com" controls=""></video>
+
+      </div>
+
+    </section>
+    <div class="third" class="admin">
+
+      <form method="POST" action="" class="addanime">
+
+          <label>episode</label>
+          <input class="INPUTadmin" type="number" value="16" name="episode" min="1" required="" onchange="cha()">
+              <label>saison</label>
+          <input class="INPUTadmin" type="number" value="1" name="saison" min="1" required="" onchange="cha()">
+              <label>nom de l'episode</label>
+          <input class="INPUTadmin" type="text" placeholder="lorem ipsum" name="name" required="" onchange="cha()">
+              <label>lien</label>
+          <input class="INPUTadmin" type="text" name="lien" required="" onchange="cha()" placeholder="lien">
+          <button type="submit" name="add" class="add">ajouter</button>
+      </form>
+      
+    </div>
+    <section class="buttonBot">
+      <a href="#" class="prev">‹ PRÉCEDENT</a>
+      <a href="#" class="next">SUIVANT ›</a>
+    </section>
+  </div>
+    
+    <script>
+
+      history.replaceState(null, document.title, location.href);
+    
+
+    function val(n){
+    document.getElementById("rate").value = n;
+    for(i=0;i<n;i++){
+    document.getElementsByClassName("etoile")[i].style="background-image:url('./img/etoile.png')";
+    }
+    for(i=n;i<5;i++){
+    document.getElementsByClassName("etoile")[i].style="background-image:url('./img/etoile.off.png')";
+    }
+    }
+    
+    
+    </script>
+  </body>
+</html>
